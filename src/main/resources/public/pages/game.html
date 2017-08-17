@@ -1,13 +1,9 @@
 
 <div class="container">
 
-    <panel header="Game">
-        <span>ID: {{game.id}}</span>
-        <span>Scores: </span>
+    <!--<panel header="Game">-->
 
-        <div class="row">Rolls:</div>
-
-        <div ng-hide="game.completed">
+        <panel header="Rolls" ng-hide="game.completed">
             <div class="row">
                 <die-roll roll="roll" ng-repeat="roll in game.dieRolls | orderBy:'value' "></die-roll>
             </div>
@@ -17,14 +13,18 @@
             </div>
 
             <div class="row">Num Rolls: {{game.numRolls}}</div>
-        </div>
+        </panel>
 
-        <div class="row" ng-show="game.completed">
-            <span>Hooray! {{game.gameSheet.totalScore}} points!</span>
-        </div>
+        <panel header="Victory!" ng-show="game.completed">
+            <div class="row">
+                <span>Hooray! {{game.gameSheet.totalScore}} points!</span>
+            </div>
+        </panel>
 
-        <game-sheet sheet="game.gameSheet" update-callback="updateGameSheet"></game-sheet>
+        <panel header="Scores">
+            <game-sheet sheet="game.gameSheet" update-callback="updateGameSheet"></game-sheet>
+        </panel>
 
-    </panel>
+    <!--</panel>-->
 
 </div>
