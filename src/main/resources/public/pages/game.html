@@ -1,0 +1,30 @@
+
+<div class="container">
+
+    <panel header="Game">
+        <span>ID: {{game.id}}</span>
+        <span>Scores: </span>
+
+        <div class="row">Rolls:</div>
+
+        <div ng-hide="game.completed">
+            <div class="row">
+                <die-roll roll="roll" ng-repeat="roll in game.dieRolls | orderBy:'value' "></die-roll>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-primary text-center" ng-disabled="game.numRolls >= 3" ng-click="reroll()">Reroll</button>
+            </div>
+
+            <div class="row">Num Rolls: {{game.numRolls}}</div>
+        </div>
+
+        <div class="row" ng-show="game.completed">
+            <span>Hooray! {{game.gameSheet.totalScore}} points!</span>
+        </div>
+
+        <game-sheet sheet="game.gameSheet" update-callback="updateGameSheet"></game-sheet>
+
+    </panel>
+
+</div>

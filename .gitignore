@@ -1,0 +1,9 @@
+target
+.idea/workspace.xml
+.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_5.xml
+src/main/resources/public/bower_components/angular/.bower.json
+src/main/resources/public/bower_components/angular-animate/bower.json
+.idea/
+src/main/resources/public/bower_components/
+media/
+yacht.iml

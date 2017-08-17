@@ -1,0 +1,46 @@
+
+<div class="container width-small">
+
+	<panel header="Games">
+
+		<!-- Header row -->
+		<div class="row margin-bottom-small">
+			<div class="game-select-date-col">
+				Start Date
+			</div>
+
+			<div class="game-select-score-col">
+				Score
+			</div>
+
+			<div class="game-select-play-col"></div>
+
+			<div class="game-select-delete-col"></div>
+		</div>
+
+		<div class="row margin-bottom-small" ng-repeat="game in games">
+			<!--<span>Id ({{game.id}})</span>-->
+			<div class="game-select-date-col">
+				<span>{{game.startDate | date:'MM-dd-yyyy HH:mm'}}</span>
+			</div>
+
+			<div class="game-select-score-col">
+				<span>{{game.gameSheet.totalScore}}</span>
+			</div>
+
+			<div class="game-select-play-col">
+				<button class="btn btn-primary" ng-click="selectGame(game.id)">Play</button>
+			</div>
+
+			<div class="game-select-delete-col">
+				<button class="btn btn-secondary" ng-click="deleteGame(game.id)">Delete</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<button class="btn btn-primary" ng-click="newGame()">New Game</button>
+		</div>
+
+	</panel>
+
+</div>

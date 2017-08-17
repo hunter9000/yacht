@@ -1,0 +1,132 @@
+/** list box directive */
+/*div.scroll-list {
+    overflow-y:scroll;
+    border: 1px solid #333
+}
+div.scroll-list-inner {
+    border-right: 1px solid #333;
+}
+div.scroll-item {
+    width:100%;
+    border-bottom: 1px solid #333;
+}*/
+
+.scroll-container {
+    overflow-y: scroll;
+}
+.medium-height {
+    height: 300px;
+}
+/*.small-height {
+    min-height: 48px !important;
+}*/
+
+.panel-body md-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.toggle-button {
+    color: gray;
+    padding: 0px;
+    margin: 0px;
+}
+
+.toggle-button-selected {
+    color: green;
+    background-color: lightgreen;
+}
+
+.toggle-button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.icon-md {
+    width: 30px;
+    height: 30px;
+}
+
+.game-select-date-col {
+    display:inline-block;
+    width: 120px;
+    text-align: left;
+}
+.game-select-score-col {
+    display:inline-block;
+    width: 60px;
+    text-align: left;
+}
+.game-select-play-col {
+     display:inline-block;
+     width: 60px;
+     text-align: left;
+ }
+.game-select-delete-col {
+    display:inline-block;
+    width: 60px;
+    text-align: left;
+}
+
+/** Die Rolls */
+.die-roll-wrapper {
+    /*border: 1px solid black;*/
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 4px;
+}
+
+.die-roll-wrapper .toggle-button {
+    width: 50px;
+    height: 50px;
+}
+
+.roll-score-wrapper {
+    /*border: 1px solid black;*/
+    /*text-align: left;*/
+    /*margin: auto;
+    width: 380px;
+    height: 38px;*/
+    padding: 5px;
+    min-height: 34px;
+}
+
+.roll-score-type {
+    display:inline-block;
+    width: 120px;
+    text-align: left;
+    margin-top: 6px;
+}
+
+/*.roll-score-chosen {
+    display:inline-block;
+    width: 60px;
+}*/
+
+.roll-score-score {
+    display:inline-block;
+    width: 60px;
+}
+
+.roll-score-button {
+    display:inline-block;
+    width: 80px;
+}
+
+.light-text {
+    color: lightgray;
+}
+
+.score-display-label {
+    display:inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.score-display-score {
+    display:inline-block;
+    width: 200px;
+    text-align: left;
+}
