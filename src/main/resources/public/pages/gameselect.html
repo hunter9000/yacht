@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="row margin-bottom-small" ng-repeat="game in games">
-			<!--<span>Id ({{game.id}})</span>-->
+
 			<div class="game-select-date-col">
 				<span>{{game.startDate | date:'MM-dd-yyyy HH:mm'}}</span>
 			</div>
@@ -29,11 +29,15 @@
 			</div>
 
 			<div class="game-select-play-col">
-				<button class="btn btn-primary" ng-click="selectGame(game.id)">Play</button>
+				<a ng-click="selectGame(game.id)">
+					<span class="glyphicon {{game.completed ? 'glyphicon-eye-open' : 'glyphicon-play'}}" aria-hidden="true"></span>
+				</a>
 			</div>
 
 			<div class="game-select-delete-col">
-				<button class="btn btn-secondary" ng-click="deleteGame(game.id)">Delete</button>
+				<a ng-click="deleteGame(game.id)">
+					<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+				</a>
 			</div>
 		</div>
 

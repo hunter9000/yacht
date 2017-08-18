@@ -134,6 +134,9 @@ public class RollScoringManager {
                 runLength++;
             }
             else {
+                if (runLength >= straightLength) {
+                    return true;
+                }
                 runLength = 0;
             }
         }

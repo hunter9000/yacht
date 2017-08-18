@@ -11,6 +11,19 @@ div.scroll-item {
     border-bottom: 1px solid #333;
 }*/
 
+.width-large {
+    width: 900px;
+}
+.width-medium {
+    width: 700px;
+}
+.width-small {
+    width: 500px;
+}
+.width-extra-small {
+    width: 275px;
+}
+
 .scroll-container {
     overflow-y: scroll;
 }
@@ -50,7 +63,7 @@ div.scroll-item {
 
 .game-select-date-col {
     display:inline-block;
-    width: 120px;
+    width: 150px;
     text-align: left;
 }
 .game-select-score-col {
@@ -60,12 +73,12 @@ div.scroll-item {
 }
 .game-select-play-col {
      display:inline-block;
-     width: 60px;
+     width: 20px;
      text-align: left;
  }
 .game-select-delete-col {
     display:inline-block;
-    width: 60px;
+    width: 20px;
     text-align: left;
 }
 
@@ -90,13 +103,13 @@ div.scroll-item {
     width: 380px;
     height: 38px;*/
     padding: 5px;
-    min-height: 34px;
+    min-height: 40px;
 }
 
 .roll-score-type {
     display:inline-block;
     width: 120px;
-    text-align: left;
+    text-align: right;
     margin-top: 6px;
 }
 
@@ -129,4 +142,8 @@ div.scroll-item {
     display:inline-block;
     width: 200px;
     text-align: left;
+}
+
+.margin-bottom-small {
+    margin-bottom: 5px;
 }
